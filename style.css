@@ -1,0 +1,151 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Jaro:opsz@6..72&family=Kumbh+Sans:wght@100..900&family=Outfit:wght@100..900&display=swap');
+
+:root {
+    --mainBG: hsl(217, 54%, 11%);
+    --cardBG: hsl(216, 50%, 16%);
+    --line: hsl(215, 32%, 27%);
+
+    --prim1: hsl(215, 51%, 70%);
+    --prim2: hsl(178, 100%, 50%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+body{
+    height: 100dvh;
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background-color: var(--mainBG);
+    font-family: 'Outfit';
+}
+
+main {
+    width: min(270px, 90%);
+    margin: auto;
+
+    background-color: var(--cardBG);
+    border-radius: 15px;
+    padding: 20px;
+    font-size: 1rem;
+}
+
+main > img { 
+    display: block;
+    margin: auto;
+    width: 100%;
+    border-radius: 15px;
+
+    /* cursor: pointer; */
+}
+
+h1 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+h1 > a {
+    color: white;
+    font-size: 1.25rem;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+h1 > a:hover {
+    color: var(--prim2);
+}
+
+main > p {
+    color: var(--prim1);
+    margin-bottom: 23px;
+    font-size: 1rem;
+    font-weight: 300;
+
+    width: 100%;
+}
+
+#container {
+    display: flex;
+    justify-content: space-between;
+
+    font-size: 0.85rem;
+    margin-bottom: 15px;
+    font-weight: 400;
+}
+
+#value {
+    color: var(--prim2);
+    width: 100px;
+}
+
+#value::before {
+    content: url(images/icon-ethereum.svg);
+    margin-right: 7px;
+    vertical-align: middle;
+}
+
+#remaining-time {
+    color: var(--prim1);
+    width: 101px;
+
+}
+
+#remaining-time::before {
+    content: url(images/icon-clock.svg);
+    margin-right: 7px;
+    vertical-align: middle;
+}
+
+hr {
+    border: 0.1rem solid var(--line);
+    margin-bottom: 20px;
+}
+
+#creator-box {
+    display: flex;
+    flex-direction: row-reverse;
+    vertical-align: middle;
+    justify-content: center;
+    align-items: start;
+
+    width: 100%;
+    height: 30px
+}
+
+#creator-box > img {
+    width: 30px;
+    height: 30px;
+
+    border: 1px solid white;
+    border-radius: 50%;
+}
+
+#creator {
+    width: 250px;
+    display: block;
+    font-size: 0.9rem;
+    color: var(--prim1);
+
+}
+
+
+#creator > a {
+    color: white;
+    text-decoration: none;
+}
+
+#creator > a:hover {
+    color: var(--prim2);
+}
+
+.attribution { font-size: 11px; text-align: center; color: var(--prim1); }
+.attribution a { color: hsl(228, 45%, 44%); }
