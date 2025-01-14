@@ -112,13 +112,9 @@ hr {
 
 #creator-box {
     display: flex;
-    flex-direction: row-reverse;
     vertical-align: middle;
     justify-content: center;
-    align-items: start;
-
-    width: 100%;
-    height: 30px
+    align-items: center;
 }
 
 #creator-box > img {
@@ -127,6 +123,7 @@ hr {
 
     border: 1px solid white;
     border-radius: 50%;
+    margin-right: 10px;
 }
 
 #creator {
