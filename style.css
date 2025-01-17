@@ -8,7 +8,7 @@
 
     --prim1: hsl(215, 51%, 70%);
     --prim2: hsl(178, 100%, 50%);
-    --prim2OPACITY: hsl(178, 100%, 50%, 0.5)
+    --prim2OPACITY: hsl(178, 100%, 50%, 0.5);
 }
 
 * {
@@ -54,7 +54,7 @@ main {
     background-size: contain;
     border-radius: 15px;
 
-    z-index: 1;
+
 }
 
 .image-hover {
@@ -70,7 +70,6 @@ main {
     border-radius: 20px;
 
     top: 0px;
-    z-index: 2;
     transition: 300ms ease;
 }
 
